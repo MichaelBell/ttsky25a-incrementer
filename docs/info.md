@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+16 standard cell library flip-flops are wired to 16 custom half adder cells, to make a 16 bit counter.
 
 ## How to test
 
-Explain how to use your project
+Provide a clock signal on clk.  in0 is the input to the LSB of the counter, so the counter will increment only if in0 is high.  The count is reset when rst_n is low.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None

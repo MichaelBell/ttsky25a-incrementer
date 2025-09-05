@@ -1,21 +1,17 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
-  language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  title:        "Incrementer"      # Project title
+  author:       "Mike Bell"      # Your name
+  discord:      "rebelmike"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A 16-bit counter using a custom half adder cell"      # One line description of what your project does
+  language:     "Magic" # other examples include Verilog, Amaranth, VHDL, etc
+  clock_hz:     10       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "1x2"          # Valid values for analog projects: 1x2, 2x2
-
-  # How many analog pins does your project use?
-  analog_pins: 2        # Valid values: 0 to 6
-  uses_3v3: false       # Set to true if your project uses 3.3V (VAPWR) in addition to 1.8V (VDPWR)
+  tiles: "1x1"          # Valid values for analog projects: 1x2, 2x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_example"
+  top_module:  "tt_um_rebelmike_incrementer"
 
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
@@ -25,7 +21,7 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
+  ui[0]: "Increment enable"
   ui[1]: ""
   ui[2]: ""
   ui[3]: ""
@@ -35,32 +31,24 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "Out 0"
+  uo[1]: "Out 1"
+  uo[2]: "Out 2"
+  uo[3]: "Out 3"
+  uo[4]: "Out 4"
+  uo[5]: "Out 5"
+  uo[6]: "Out 6"
+  uo[7]: "Out 7"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
-
-  # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: ""
-  ua[1]: ""
-  ua[2]: ""
-  ua[3]: ""
-  ua[4]: ""
-  ua[5]: ""
+  uio[0]: "Out 8"
+  uio[1]: "Out 9"
+  uio[2]: "Out 10"
+  uio[3]: "Out 11"
+  uio[4]: "Out 12"
+  uio[5]: "Out 13"
+  uio[6]: "Out 14"
+  uio[7]: "Out 15"
 
 # Do not change!
 yaml_version: 6
