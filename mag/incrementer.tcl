@@ -15,9 +15,9 @@ for {set i 0} {$i < $REPEATS} {incr i} {
     getcell sky130_fd_sc_hd__tapvpwrvgnd_1
     box 920 [expr $i * $ROW_HEIGHT] 920 [expr $i * $ROW_HEIGHT]
     getcell sky130_fd_sc_hd__tapvpwrvgnd_1 v
-    box 983 [expr $i * $ROW_HEIGHT + $ROW_HALF_HEIGHT + $HA_OFFSET] 983 [expr $i * $ROW_HEIGHT + $ROW_HALF_HEIGHT + $HA_OFFSET]
+    box 982.5 [expr $i * $ROW_HEIGHT + $ROW_HALF_HEIGHT + $HA_OFFSET] 982.5 [expr $i * $ROW_HEIGHT + $ROW_HALF_HEIGHT + $HA_OFFSET]
     getcell ha child 0 0
-    box 983 [expr $i * $ROW_HEIGHT + $HA_OFFSET] 983 [expr $i * $ROW_HEIGHT + $HA_OFFSET]
+    box 982.5 [expr $i * $ROW_HEIGHT + $HA_OFFSET] 982.5 [expr $i * $ROW_HEIGHT + $HA_OFFSET]
     getcell ha_flip v child 0 0
 
     # Clock
@@ -54,9 +54,9 @@ for {set i 0} {$i < $REPEATS} {incr i} {
     paint via1
     box 928 [expr $i * $ROW_HEIGHT + 480] 1400 [expr $i * $ROW_HEIGHT + 506]
     paint metal2
-    box 1121 [expr $i * $ROW_HEIGHT + 480] 1148 [expr $i * $ROW_HEIGHT + 506]
+    box 1120.5 [expr $i * $ROW_HEIGHT + 480] 1147.5 [expr $i * $ROW_HEIGHT + 506]
     paint via1
-    box 1118 [expr $i * $ROW_HEIGHT + 480] 1151 [expr $i * $ROW_HEIGHT + 506]
+    box 1117.5 [expr $i * $ROW_HEIGHT + 480] 1150.5 [expr $i * $ROW_HEIGHT + 506]
     paint metal1
 
     box 146 [expr $i * $ROW_HEIGHT + 41] 168 [expr $i * $ROW_HEIGHT + 58]
@@ -71,9 +71,9 @@ for {set i 0} {$i < $REPEATS} {incr i} {
     paint via1
     box 928 [expr $i * $ROW_HEIGHT + 38] 1400 [expr $i * $ROW_HEIGHT + 64]
     paint metal2
-    box 1121 [expr $i * $ROW_HEIGHT + 38] 1148 [expr $i * $ROW_HEIGHT + 64]
+    box 1120.5 [expr $i * $ROW_HEIGHT + 38] 1147.5 [expr $i * $ROW_HEIGHT + 64]
     paint via1
-    box 1118 [expr $i * $ROW_HEIGHT + 38] 1151 [expr $i * $ROW_HEIGHT + 64]
+    box 1117.5 [expr $i * $ROW_HEIGHT + 38] 1150.5 [expr $i * $ROW_HEIGHT + 64]
     paint metal1
 
     # Q
@@ -153,15 +153,15 @@ box 705 121 739 [expr $REPEATS * $ROW_HEIGHT + 50]
 paint metal2
 
 # Inc
-box 1183 [expr $REPEATS * $ROW_HEIGHT + 8] 1200 [expr $REPEATS * $ROW_HEIGHT + 38]
+box 1182.5 [expr $REPEATS * $ROW_HEIGHT + 8] 1199.5 [expr $REPEATS * $ROW_HEIGHT + 38]
 paint locali
-box 1183 [expr $REPEATS * $ROW_HEIGHT + 11] 1200 [expr $REPEATS * $ROW_HEIGHT + 35]
+box 1182.5 [expr $REPEATS * $ROW_HEIGHT + 11] 1199.5 [expr $REPEATS * $ROW_HEIGHT + 35]
 paint viali
-box 1177 [expr $REPEATS * $ROW_HEIGHT + 8] 1206 [expr $REPEATS * $ROW_HEIGHT + 48]
+box 1176.5 [expr $REPEATS * $ROW_HEIGHT + 8] 1205.5 [expr $REPEATS * $ROW_HEIGHT + 48]
 paint metal1
-box 1177 [expr $REPEATS * $ROW_HEIGHT + 14] 1206 [expr $REPEATS * $ROW_HEIGHT + 42]
+box 1176.5 [expr $REPEATS * $ROW_HEIGHT + 14] 1205.5 [expr $REPEATS * $ROW_HEIGHT + 42]
 paint via1
-box 1177 [expr $REPEATS * $ROW_HEIGHT + 8] 1206 [expr $REPEATS * $ROW_HEIGHT + 50]
+box 1176.5 [expr $REPEATS * $ROW_HEIGHT + 8] 1205.5 [expr $REPEATS * $ROW_HEIGHT + 50]
 paint metal2
 
 # Power

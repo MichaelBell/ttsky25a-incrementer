@@ -109,7 +109,7 @@ draw_top_signal_wire 1009 10782 1043 10992 14398
 draw_top_signal_wire 1705 10782 1739 10942 14122
 
 # Wire inc
-draw_top_signal_wire 2177 10782 2206 10892 13846
+draw_top_signal_wire 2176.5 10782 2205.5 10892 13846
 
 # Wire bits
 for {set i 0} {$i < 8} {incr i} {
