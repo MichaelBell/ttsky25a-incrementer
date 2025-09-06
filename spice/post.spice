@@ -1,0 +1,23 @@
+
+* set gnd and power
+Vgnd VGND 0 0
+Vdd VPWR VGND 1.8
+
+* Increment high
+Rinc VPWR INC 0.1
+
+* create clock
+Vclk CLK VGND pulse(0 1.8 1n 50p 50p 1n 2n)
+Vrstn RSTN VGND pulse(1.8 0 100n 50p 50p 5n)
+.tran 10e-12 1000e-09 0e-00
+
+.control
+run
+set color0 = white
+set color1 = black
+*plot RSTN-0.4 CLK-0.2 S0 S1+0.2 S2+0.4 S3+0.6 S4+0.8 S5+1.0
+plot RSTN-0.4 S0 S5+0.2 S6+0.4 S7+0.6 S8+0.8 S9+1.0
+plot i(Vdd)
+.endc
+
+.end

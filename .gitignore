@@ -11,3 +11,6 @@ test/results.xml
 test/gate_level_netlist.v
 mag/incrementer.mag
 mag/tt_um_rebelmike_incrementer.mag
+spice/tt_um_flat.*
+spice/simulation.spice
+*.bak

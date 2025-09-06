@@ -1,0 +1,6 @@
+Incrementer Simulation
+.include "pdk_lib.spice"
+
+* instantiate the incrementer
+*  
+Xinc VPWR INC VGND VGND VGND VGND VGND VGND VGND VGND VGND VGND VGND VGND VGND VGND VGND OE0 OE1 OE2 OE3 OE4 OE5 OE6 OE7 S9 S11 S13 S15 S0 S1 S2 S4 S6 S7 VPWR S14 S12 S5 S10 S3 S8 CLK RSTN VGND tt_um_flat
