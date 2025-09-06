@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1752183585
+timestamp 1752183586
 << nwell >>
 rect -30 -20 390 135
 << pwell >>
@@ -136,4 +136,6 @@ rect 65 -47 371 -21
 rect 97 0 271 38
 rect 20 -125 219 -75
 << labels >>
+<< properties >>
+string MASKHINTS_PSDM -33 0 763 280
 << end >>
