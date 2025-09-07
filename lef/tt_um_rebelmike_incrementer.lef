@@ -164,7 +164,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_in[7]
   PIN uio_oe[0]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNADIFFAREA 29.428749 ;
     PORT
@@ -173,7 +173,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_oe[0]
   PIN uio_oe[1]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNADIFFAREA 29.428749 ;
     PORT
@@ -182,7 +182,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_oe[1]
   PIN uio_oe[2]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNADIFFAREA 29.428749 ;
     PORT
@@ -191,7 +191,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_oe[2]
   PIN uio_oe[3]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNADIFFAREA 29.428749 ;
     PORT
@@ -200,7 +200,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_oe[3]
   PIN uio_oe[4]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNADIFFAREA 29.428749 ;
     PORT
@@ -209,7 +209,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_oe[4]
   PIN uio_oe[5]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNADIFFAREA 29.428749 ;
     PORT
@@ -218,7 +218,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_oe[5]
   PIN uio_oe[6]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNADIFFAREA 29.428749 ;
     PORT
@@ -227,7 +227,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_oe[6]
   PIN uio_oe[7]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNADIFFAREA 29.428749 ;
     PORT
@@ -236,7 +236,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_oe[7]
   PIN uio_out[0]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -246,7 +246,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_out[0]
   PIN uio_out[1]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -256,7 +256,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_out[1]
   PIN uio_out[2]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -266,7 +266,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_out[2]
   PIN uio_out[3]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -276,7 +276,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_out[3]
   PIN uio_out[4]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -286,7 +286,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_out[4]
   PIN uio_out[5]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -296,7 +296,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_out[5]
   PIN uio_out[6]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -306,7 +306,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_out[6]
   PIN uio_out[7]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -316,7 +316,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uio_out[7]
   PIN uo_out[0]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -326,7 +326,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uo_out[0]
   PIN uo_out[1]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -336,7 +336,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uo_out[1]
   PIN uo_out[2]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -346,7 +346,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uo_out[2]
   PIN uo_out[3]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -356,7 +356,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uo_out[3]
   PIN uo_out[4]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -366,7 +366,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uo_out[4]
   PIN uo_out[5]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -376,7 +376,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uo_out[5]
   PIN uo_out[6]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -386,7 +386,7 @@ MACRO tt_um_rebelmike_incrementer
     END
   END uo_out[6]
   PIN uo_out[7]
-    DIRECTION OUTPUT TRISTATE ;
+    DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.126000 ;
     ANTENNADIFFAREA 0.780400 ;
@@ -413,33 +413,7 @@ MACRO tt_um_rebelmike_incrementer
   END VGND
   OBS
       LAYER nwell ;
-        RECT 9.810 104.740 19.850 106.015 ;
-        RECT 9.810 103.190 23.725 104.740 ;
-        RECT 9.810 103.185 19.850 103.190 ;
-        RECT 9.810 100.570 19.850 100.575 ;
-        RECT 9.810 97.750 23.725 100.570 ;
-        RECT 9.810 97.745 19.850 97.750 ;
-        RECT 9.810 95.130 19.850 95.135 ;
-        RECT 9.810 92.310 23.725 95.130 ;
-        RECT 9.810 92.305 19.850 92.310 ;
-        RECT 9.810 89.690 19.850 89.695 ;
-        RECT 9.810 86.870 23.725 89.690 ;
-        RECT 9.810 86.865 19.850 86.870 ;
-        RECT 9.810 84.250 19.850 84.255 ;
-        RECT 9.810 81.430 23.725 84.250 ;
-        RECT 9.810 81.425 19.850 81.430 ;
-        RECT 9.810 78.810 19.850 78.815 ;
-        RECT 9.810 75.990 23.725 78.810 ;
-        RECT 9.810 75.985 19.850 75.990 ;
-        RECT 9.810 73.370 19.850 73.375 ;
-        RECT 9.810 70.550 23.725 73.370 ;
-        RECT 9.810 70.545 19.850 70.550 ;
-        RECT 9.810 67.930 19.850 67.935 ;
-        RECT 9.810 65.110 23.725 67.930 ;
-        RECT 9.810 65.105 19.850 65.110 ;
-        RECT 9.810 62.490 19.850 62.495 ;
-        RECT 9.810 60.940 23.725 62.490 ;
-        RECT 9.810 60.890 19.850 60.940 ;
+        RECT 9.810 60.890 23.725 107.405 ;
       LAYER li1 ;
         RECT 10.000 60.990 23.535 107.405 ;
       LAYER met1 ;

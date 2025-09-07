@@ -11,6 +11,6 @@ extresist
 ext2spice lvs
 ext2spice extresist on
 ext2spice cthresh 1
-ext2spice rthresh 0
+ext2spice rthresh 1
 ext2spice
 quit -noprompt

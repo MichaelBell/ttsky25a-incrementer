@@ -17,7 +17,7 @@ for {set i 0} {$i < $REPEATS} {incr i} {
     getcell sky130_fd_sc_hd__tapvpwrvgnd_1 v
     box 982.5 [expr $i * $ROW_HEIGHT + $ROW_HALF_HEIGHT + $HA_OFFSET] 982.5 [expr $i * $ROW_HEIGHT + $ROW_HALF_HEIGHT + $HA_OFFSET]
     getcell ha child 0 0
-    box 982.5 [expr $i * $ROW_HEIGHT + $HA_OFFSET] 982.5 [expr $i * $ROW_HEIGHT + $HA_OFFSET]
+    box 982.5 [expr $i * $ROW_HEIGHT + $HA_OFFSET - 30] 982.5 [expr $i * $ROW_HEIGHT + $HA_OFFSET - 30]
     getcell ha_flip v child 0 0
 
     # Clock
