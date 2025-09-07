@@ -103,7 +103,8 @@ for {set i 0} {$i < 8} {incr i} {
 
 # Add logo
 box 5200 0 5200 0
-getcell ../art/logo.mag
+getcell logo.mag
+select top cell
 
 # Save the layout and export GDS/LEF
 # ----------------------------------
