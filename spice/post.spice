@@ -4,13 +4,13 @@ Vgnd VGND 0 0
 Vdd VPWR VGND 1.8
 
 * Increment toggling
-Vinc INC_IN VGND pulse(0 1.8 2n 200p 200p 2n 4n)
+Vinc INC_IN VGND pulse(0 1.8 1.5n 200p 200p 2n 4n)
 Rinc INC_IN INC 100
 
 * create clock
 Vclk CLK_IN VGND pulse(0 1.8 1n 200p 200p 1n 2n)
 Vrstn RSTN VGND pulse(1.8 0 100n 50p 50p 5n)
-.tran 10e-12 50e-09 0e-00
+.tran 10e-12 500e-09 0e-00
 
 Rclk CLK_IN CLK 100
 
@@ -33,7 +33,7 @@ run
 set color0 = white
 set color1 = black
 plot INC-0.4 CLK-0.2 S0_OUT S1_OUT+0.2 S2_OUT+0.4 S3_OUT+0.6 S4_OUT+0.8
-* plot RSTN-0.4 S0 S5+0.2 S6+0.4 S7+0.6 S8+0.8 S9+1.0
+plot RSTN-0.4 S0 S5+0.2 S6+0.4 S7+0.6 S8+0.8 S9+1.0
 plot i(Vdd)
 .endc
 

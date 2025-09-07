@@ -101,6 +101,10 @@ for {set i 0} {$i < 8} {incr i} {
     draw_side_signal_wire 2400 [expr 9954 - 544 * $i] [expr 9154 - 552 * $i]
 }
 
+# Add logo
+box 5200 0 5200 0
+getcell ../art/logo.mag
+
 # Save the layout and export GDS/LEF
 # ----------------------------------
 save ${TOP_LEVEL_CELL}.mag

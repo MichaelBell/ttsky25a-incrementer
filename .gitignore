@@ -13,4 +13,5 @@ mag/incrementer.mag
 mag/tt_um_rebelmike_incrementer.mag
 spice/tt_um_flat.*
 spice/simulation.spice
+art/incrementer_logo.gds
 *.bak
