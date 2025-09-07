@@ -9,7 +9,7 @@ img = Image.open("dragon_inc.png")
 
 LAYER = 71    # met4
 DATATYPE = 20 # drawing
-PIXEL_SIZE = 0.3 # um
+PIXEL_SIZE = 0.4 # um
 
 # Convert the image to grayscale
 img = img.convert("L")
