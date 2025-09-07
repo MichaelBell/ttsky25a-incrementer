@@ -94,7 +94,9 @@ for {set i 0} {$i < $REPEATS} {incr i} {
     paint via1
     box 882 [expr $i * $ROW_HEIGHT + 83] 1080 [expr $i * $ROW_HEIGHT + 121]
     paint metal2
+}
 
+for {set i 0} {$i <= $REPEATS} {incr i} {
     # PWR
     for {set j 0} {$j < 4} {incr j} {
         box [expr $j * 40 + 209] [expr $i * $ROW_HEIGHT - 16] [expr $j * 40 + 241] [expr $i * $ROW_HEIGHT + 16]
@@ -128,29 +130,86 @@ for {set i 0} {$i < $REPEATS} {incr i} {
     paint metal2
 }
 
-# Final PWR
-for {set j 0} {$j < 4} {incr j} {
-    box [expr $j * 40 + 209] [expr $i * $ROW_HEIGHT - 16] [expr $j * 40 + 241] [expr $i * $ROW_HEIGHT + 16]
-    paint via3
-    box [expr $j * 40 + 211] [expr $i * $ROW_HEIGHT - 14] [expr $j * 40 + 239] [expr $i * $ROW_HEIGHT + 14]
-    paint via2
-}
-for {set j 0} {$j < 5} {incr j} {
-    box [expr $j * 32 + 208] [expr $i * $ROW_HEIGHT - 14] [expr $j * 32 + 234] [expr $i * $ROW_HEIGHT + 14]
-    paint via1
-}
-box 200 [expr $i * $ROW_HEIGHT - 17] 370 [expr $i * $ROW_HEIGHT + 17]
-paint metal3
-box 200 [expr $i * $ROW_HEIGHT - 17] 370 [expr $i * $ROW_HEIGHT + 17]
-paint metal2
+box 0 [expr $REPEATS * $ROW_HEIGHT] 0 [expr $REPEATS * $ROW_HEIGHT]
+getcell sky130_fd_sc_hd__clkbuf_8 180
+box 506 [expr $REPEATS * $ROW_HEIGHT] 506 [expr $REPEATS * $ROW_HEIGHT]
+getcell sky130_fd_sc_hd__tapvpwrvgnd_1 v
+box 552 [expr $REPEATS * $ROW_HEIGHT] 552 [expr $REPEATS * $ROW_HEIGHT]
+getcell sky130_fd_sc_hd__buf_6 180
 
 # Clock
-box 9 121 43 [expr $REPEATS * $ROW_HEIGHT + 50]
+box 9 121 43 [expr $REPEATS * $ROW_HEIGHT + 191]
 paint metal2
+box 9 [expr $REPEATS * $ROW_HEIGHT + 111] 110 [expr $REPEATS * $ROW_HEIGHT + 191]
+paint metal2
+box 75 [expr $REPEATS * $ROW_HEIGHT + 114] 104 [expr $REPEATS * $ROW_HEIGHT + 138]
+paint viali
+box 69 [expr $REPEATS * $ROW_HEIGHT + 111] 110 [expr $REPEATS * $ROW_HEIGHT + 141]
+paint metal1
+box 75 [expr $REPEATS * $ROW_HEIGHT + 111] 104 [expr $REPEATS * $ROW_HEIGHT + 141]
+paint via1
+box 75 [expr $REPEATS * $ROW_HEIGHT + 164] 104 [expr $REPEATS * $ROW_HEIGHT + 188]
+paint viali
+box 69 [expr $REPEATS * $ROW_HEIGHT + 161] 110 [expr $REPEATS * $ROW_HEIGHT + 191]
+paint metal1
+box 75 [expr $REPEATS * $ROW_HEIGHT + 161] 104 [expr $REPEATS * $ROW_HEIGHT + 191]
+paint via1
+
+box 473 [expr $REPEATS * $ROW_HEIGHT + 144] 498 [expr $REPEATS * $ROW_HEIGHT + 178]
+paint viali
+box 466 [expr $REPEATS * $ROW_HEIGHT + 135] 502 [expr $REPEATS * $ROW_HEIGHT + 187]
+paint metal1
+box 466 [expr $REPEATS * $ROW_HEIGHT + 144] 501 [expr $REPEATS * $ROW_HEIGHT + 178]
+paint via1
+box 460 [expr $REPEATS * $ROW_HEIGHT + 135] 501 [expr $REPEATS * $ROW_HEIGHT + 187]
+paint metal2
+box 426 [expr $REPEATS * $ROW_HEIGHT + 135] 460 [expr $REPEATS * $ROW_HEIGHT + 187]
+paint metal2
+box 426 [expr $REPEATS * $ROW_HEIGHT + 133] 470 [expr $REPEATS * $ROW_HEIGHT + 190]
+paint metal3
+box 427 [expr $REPEATS * $ROW_HEIGHT + 136] 459 [expr $REPEATS * $ROW_HEIGHT + 176]
+paint via3
+box 431 [expr $REPEATS * $ROW_HEIGHT + 138] 459 [expr $REPEATS * $ROW_HEIGHT + 174]
+paint via2
+box 426 [expr $REPEATS * $ROW_HEIGHT + 135] 460 [expr $REPEATS * $ROW_HEIGHT + $ROW_HALF_HEIGHT + 50]
+paint metal4
+
 
 # Reset
-box 705 121 739 [expr $REPEATS * $ROW_HEIGHT + 50]
+box 705 121 739 [expr $REPEATS * $ROW_HEIGHT + 191]
 paint metal2
+box 698 [expr $REPEATS * $ROW_HEIGHT + 111] 739 [expr $REPEATS * $ROW_HEIGHT + 191]
+paint metal2
+box 704 [expr $REPEATS * $ROW_HEIGHT + 114] 733 [expr $REPEATS * $ROW_HEIGHT + 138]
+paint viali
+box 698 [expr $REPEATS * $ROW_HEIGHT + 111] 739 [expr $REPEATS * $ROW_HEIGHT + 141]
+paint metal1
+box 704 [expr $REPEATS * $ROW_HEIGHT + 111] 733 [expr $REPEATS * $ROW_HEIGHT + 141]
+paint via1
+box 704 [expr $REPEATS * $ROW_HEIGHT + 164] 733 [expr $REPEATS * $ROW_HEIGHT + 188]
+paint viali
+box 698 [expr $REPEATS * $ROW_HEIGHT + 161] 739 [expr $REPEATS * $ROW_HEIGHT + 191]
+paint metal1
+box 704 [expr $REPEATS * $ROW_HEIGHT + 161] 733 [expr $REPEATS * $ROW_HEIGHT + 191]
+paint via1
+
+box 868 [expr $REPEATS * $ROW_HEIGHT + 144] 918 [expr $REPEATS * $ROW_HEIGHT + 162]
+paint viali
+box 862 [expr $REPEATS * $ROW_HEIGHT + 140] 925 [expr $REPEATS * $ROW_HEIGHT + 166]
+paint metal1
+box 868 [expr $REPEATS * $ROW_HEIGHT + 140] 921 [expr $REPEATS * $ROW_HEIGHT + 166]
+paint via1
+box 862 [expr $REPEATS * $ROW_HEIGHT + 137] 927 [expr $REPEATS * $ROW_HEIGHT + 192]
+paint metal2
+
+box 868 [expr $REPEATS * $ROW_HEIGHT + 135] 920 [expr $REPEATS * $ROW_HEIGHT + 192]
+paint metal3
+box 878 [expr $REPEATS * $ROW_HEIGHT + 138] 910 [expr $REPEATS * $ROW_HEIGHT + 178]
+paint via3
+box 882 [expr $REPEATS * $ROW_HEIGHT + 140] 910 [expr $REPEATS * $ROW_HEIGHT + 176]
+paint via2
+box 877 [expr $REPEATS * $ROW_HEIGHT + 137] 911 [expr $REPEATS * $ROW_HEIGHT + $ROW_HALF_HEIGHT + 50]
+paint metal4
 
 # Inc
 box 1182.5 [expr $REPEATS * $ROW_HEIGHT + 8] 1199.5 [expr $REPEATS * $ROW_HEIGHT + 38]
@@ -161,17 +220,26 @@ box 1176.5 [expr $REPEATS * $ROW_HEIGHT + 8] 1205.5 [expr $REPEATS * $ROW_HEIGHT
 paint metal1
 box 1176.5 [expr $REPEATS * $ROW_HEIGHT + 14] 1205.5 [expr $REPEATS * $ROW_HEIGHT + 42]
 paint via1
-box 1176.5 [expr $REPEATS * $ROW_HEIGHT + 8] 1205.5 [expr $REPEATS * $ROW_HEIGHT + 50]
+box 1170 [expr $REPEATS * $ROW_HEIGHT + 8] 1212 [expr $REPEATS * $ROW_HEIGHT + 50]
 paint metal2
 
+box 1170 [expr $REPEATS * $ROW_HEIGHT + 8] 1212 [expr $REPEATS * $ROW_HEIGHT + 70]
+paint metal3
+box 1176 [expr $REPEATS * $ROW_HEIGHT + 11] 1208 [expr $REPEATS * $ROW_HEIGHT + 47]
+paint via3
+box 1176 [expr $REPEATS * $ROW_HEIGHT + 13] 1206 [expr $REPEATS * $ROW_HEIGHT + 45]
+paint via2
+box 1170 [expr $REPEATS * $ROW_HEIGHT + 8] 1212 [expr $REPEATS * $ROW_HEIGHT + $ROW_HALF_HEIGHT + 50]
+paint metal4
+
 # Power
-box 200 -50 370 [expr $REPEATS * $ROW_HEIGHT + 50]
+box 200 -50 370 [expr $REPEATS * $ROW_HEIGHT + $ROW_HALF_HEIGHT + 50]
 paint metal4
 
 # Ground
-box 500 -50 670 [expr $REPEATS * $ROW_HEIGHT + 50]
+box 500 -50 670 [expr $REPEATS * $ROW_HEIGHT + $ROW_HALF_HEIGHT + 50]
 paint metal4
 
-box 0 -50 1400 [expr $REPEATS * $ROW_HEIGHT + 50]
+box 0 -50 1400 [expr $REPEATS * $ROW_HEIGHT + $ROW_HALF_HEIGHT + 50]
 save incrementer.mag
 quit -noprompt
