@@ -7,6 +7,10 @@ set HA_OFFSET 151
 
 for {set i 0} {$i < $REPEATS} {incr i} {
     # Instantiate the cells
+    box -138 [expr $i * $ROW_HEIGHT + $ROW_HALF_HEIGHT] 0 [expr $i * $ROW_HEIGHT + $ROW_HALF_HEIGHT]
+    getcell sky130_fd_sc_hd__decap_3
+    box -138 [expr $i * $ROW_HEIGHT] 0 [expr $i * $ROW_HEIGHT]
+    getcell sky130_fd_sc_hd__decap_3 v
     box 0 [expr $i * $ROW_HEIGHT + $ROW_HALF_HEIGHT] 0 [expr $i * $ROW_HEIGHT + $ROW_HALF_HEIGHT]
     getcell sky130_fd_sc_hd__dfrtp_1
     box 0 [expr $i * $ROW_HEIGHT] 0 [expr $i * $ROW_HEIGHT]
@@ -130,6 +134,8 @@ for {set i 0} {$i <= $REPEATS} {incr i} {
     paint metal2
 }
 
+box -138 [expr $REPEATS * $ROW_HEIGHT] -138 [expr $REPEATS * $ROW_HEIGHT]
+getcell sky130_fd_sc_hd__decap_3 v
 box 0 [expr $REPEATS * $ROW_HEIGHT] 0 [expr $REPEATS * $ROW_HEIGHT]
 getcell sky130_fd_sc_hd__clkbuf_8 180
 box 506 [expr $REPEATS * $ROW_HEIGHT] 506 [expr $REPEATS * $ROW_HEIGHT]
